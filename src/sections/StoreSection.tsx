@@ -2,7 +2,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 
 export default function StoreSection() {
   return (
-    <section className="bg-navy section-padding">
+    <section className="bg-navy section-padding pt-20 md:pt-24">
       <div className="content-max-width">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left - Store Photo */}

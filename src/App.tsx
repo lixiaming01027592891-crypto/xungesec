@@ -4,7 +4,6 @@ import Navigation from '@/components/Navigation';
 import FullscreenMenu from '@/components/FullscreenMenu';
 import SidebarContact from '@/components/SidebarContact';
 import Footer from '@/components/Footer';
-import HeroSection from '@/sections/HeroSection';
 import StoreSection from '@/sections/StoreSection';
 import ServicesSection from '@/sections/ServicesSection';
 import GallerySection from '@/sections/GallerySection';
@@ -49,7 +48,6 @@ function AppContent() {
       <SidebarContact />
 
       <main>
-        <HeroSection />
         <StoreSection />
         <ServicesSection />
         <GallerySection />
