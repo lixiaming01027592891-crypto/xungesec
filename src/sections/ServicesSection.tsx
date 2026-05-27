@@ -65,8 +65,38 @@ export default function ServicesSection() {
         </ScrollReveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-          {services.map((service, i) => (
-            <ScrollReveal key={service.num} delay={i * 0.1} y={30}>
+          {/* 01 Card — Photo top / Text bottom */}
+          <ScrollReveal delay={0} y={30}>
+            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+              {/* Photo area with 01 overlay */}
+              <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+                <span className="absolute top-3 left-4 text-5xl md:text-6xl font-extrabold text-white/30 z-10 drop-shadow-md font-mono">
+                  01
+                </span>
+                <img
+                  src="/images/service-01.jpg"
+                  alt="爬梯機上下樓服務"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              {/* Text area */}
+              <div className="p-5 md:p-6">
+                <h3 className="text-xl font-bold text-navy mb-1">
+                  爬梯機上下樓服務
+                </h3>
+                <span className="text-climb-red text-sm font-medium block mb-3">
+                  可申請政府補助
+                </span>
+                <p className="text-steel text-sm leading-relaxed">
+                  專業操作人員協助行動不便者安全上下樓梯，適用於住宅、醫院、診所等各種場所。
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* 02-05 Cards — Original layout */}
+          {services.slice(1).map((service, i) => (
+            <ScrollReveal key={service.num} delay={(i + 1) * 0.1} y={30}>
               <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
                 <span className="text-5xl md:text-6xl font-bold text-gray-200 font-mono block mb-4">
                   {service.num}
