@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 30% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 15%;
+    --primary: 210 55% 23%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 36 24% 93%;
+    --secondary-foreground: 210 30% 15%;
+    --muted: 36 24% 93%;
+    --muted-foreground: 210 10% 41%;
+    --accent: 36 24% 93%;
+    --accent-foreground: 210 30% 15%;
+    --destructive: 357 75% 44%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 36 12% 85%;
+    --input: 36 12% 85%;
+    --ring: 210 55% 23%;
+    --radius: 0.5rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy-dark text-white font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .glitch-text {
+    position: relative;
+    display: inline-block;
+  }
+
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+
+  .glitch-text::before {
+    color: #C41E24;
+    animation: glitch-before 4s steps(1) infinite;
+    z-index: -1;
+  }
+
+  .glitch-text::after {
+    color: #4A9FD4;
+    animation: glitch-after 4s steps(1) infinite;
+    z-index: -2;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-28 xl:py-32 px-5 md:px-8 lg:px-10;
+  }
+
+  .content-max-width {
+    @apply max-w-[1280px] mx-auto;
+  }
+
+  .label-text {
+    @apply text-xs font-medium tracking-[0.08em] uppercase font-inter;
+  }
+
+  .text-shadow-hero {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .glitch-text::before,
+  .glitch-text::after {
+    display: none !important;
+  }
+}
