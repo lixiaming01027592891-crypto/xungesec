@@ -94,9 +94,63 @@ export default function ServicesSection() {
             </div>
           </ScrollReveal>
 
-          {/* 02-05 Cards — Original layout */}
-          {services.slice(1).map((service, i) => (
-            <ScrollReveal key={service.num} delay={(i + 1) * 0.1} y={30}>
+          {/* 02 Card — Photo top / Text bottom */}
+          <ScrollReveal delay={0.1} y={30}>
+            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+              <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+                <span className="absolute top-3 left-4 text-5xl md:text-6xl font-extrabold text-white/30 z-10 drop-shadow-md font-mono">
+                  02
+                </span>
+                <img
+                  src="/images/service-02.png"
+                  alt="座椅爬梯機販售"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-xl font-bold text-navy mb-1">
+                  座椅爬梯機販售
+                </h3>
+                <span className="text-climb-red text-sm font-medium block mb-3">
+                  可申請政府補助 4–8 萬
+                </span>
+                <p className="text-steel text-sm leading-relaxed">
+                  提供多款電動爬梯機銷售，通過衛服部醫療器材許可，品質有保障。
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* 03 Card — Photo top / Text bottom */}
+          <ScrollReveal delay={0.2} y={30}>
+            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+              <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+                <span className="absolute top-3 left-4 text-5xl md:text-6xl font-extrabold text-white/30 z-10 drop-shadow-md font-mono">
+                  03
+                </span>
+                <img
+                  src="/images/service-03.png"
+                  alt="座椅爬梯機租賃"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <h3 className="text-xl font-bold text-navy mb-1">
+                  座椅爬梯機租賃
+                </h3>
+                <span className="text-climb-red text-sm font-medium block mb-3">
+                  可申請長照月租補助 2800
+                </span>
+                <p className="text-steel text-sm leading-relaxed">
+                  靈活租賃方案，短期長期皆可，讓您以最經濟的方式獲得專業設備。
+                </p>
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* 04-05 Cards — Original layout */}
+          {services.slice(3).map((service, i) => (
+            <ScrollReveal key={service.num} delay={(i + 3) * 0.1} y={30}>
               <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
                 <span className="text-5xl md:text-6xl font-bold text-gray-200 font-mono block mb-4">
                   {service.num}
