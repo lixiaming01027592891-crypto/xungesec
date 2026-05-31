@@ -43,7 +43,7 @@ export default function ServicesSection() {
                   爬梯機上下樓服務
                 </h3>
                 <span className="text-climb-red text-sm font-medium block mb-3">
-                  可申請政府補助
+                  高雄市長照趟次租賃補助
                 </span>
                 <p className="text-steel text-sm leading-relaxed">
                   專業操作人員協助行動不便者安全上下樓梯，適用於住宅、醫院、診所等各種場所。
@@ -60,20 +60,20 @@ export default function ServicesSection() {
                   02
                 </span>
                 <img
-                  src="/images/service-02.png"
-                  alt="座椅爬梯機販售"
+                  src="/images/service-02a.jpg"
+                  alt="履帶爬梯機販售"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-5 md:p-6">
                 <h3 className="text-xl font-bold text-navy mb-1">
-                  座椅爬梯機販售
+                  履帶爬梯機販售
                 </h3>
                 <span className="text-climb-red text-sm font-medium block mb-3">
                   可申請政府補助 4–8 萬
                 </span>
                 <p className="text-steel text-sm leading-relaxed">
-                  提供多款電動爬梯機銷售，通過衛服部醫療器材許可，品質有保障。
+                  提供履帶式爬梯機銷售，通過衛服部醫療器材許可，品質有保障。
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function ServicesSection() {
                 strokeWidth={1.5}
               />
               <h3 className="text-xl font-bold text-navy mb-1">
-                座椅爬梯機租賃
+                履帶爬梯機租賃
               </h3>
               <span className="text-climb-red text-sm font-medium block mb-3">
                 可申請長照月租補助 2800
