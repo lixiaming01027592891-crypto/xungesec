@@ -6,9 +6,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
-  { value: '4\u20138', suffix: '萬', label: '身心障礙爬梯機補助', desc: '符合資格者可申請購買補助' },
-  { value: '2800', suffix: '', prefix: '$', label: '長照爬梯機月租補助', desc: '每月可申請租賃補助' },
-  { value: '6\u20137', suffix: '折', label: '展示機優惠價', desc: '一年內展示機特惠回饋' },
+  { value: '4\u20138', suffix: '萬', prefix: '', label: '身心障礙爬梯機補助', desc: '符合資格者可申請購買補助' },
+  { value: '', suffix: '', prefix: '', label: '長照爬梯機租賃補助', desc: '可申請趟次租賃及月租補助' },
 ];
 
 function AnimatedStat({ stat }: { stat: typeof stats[0] }) {
@@ -28,7 +27,7 @@ function AnimatedStat({ stat }: { stat: typeof stats[0] }) {
         setHasAnimated(true);
 
         const numEl = numRef.current;
-        if (!numEl) return;
+        if (!numEl || !stat.value) return;
 
         // Parse the value
         const cleanVal = stat.value.replace('\u2013', '-');
@@ -70,10 +69,16 @@ function AnimatedStat({ stat }: { stat: typeof stats[0] }) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-climb-red font-inter mb-2">
-        <span ref={numRef}>{stat.prefix || ''}0</span>
-        <span>{stat.suffix}</span>
-      </div>
+      {stat.value ? (
+        <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-climb-red font-inter mb-2">
+          <span ref={numRef}>{stat.prefix || ''}0</span>
+          <span>{stat.suffix}</span>
+        </div>
+      ) : (
+        <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-climb-red font-inter mb-2">
+          —
+        </div>
+      )}
       <h4 className="text-lg md:text-xl font-bold text-white mb-1">
         {stat.label}
       </h4>
@@ -88,7 +93,7 @@ export default function SubsidySection() {
       <div className="content-max-width">
         {/* Stats */}
         <ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 mb-16 max-w-3xl mx-auto">
             {stats.map((stat) => (
               <AnimatedStat key={stat.label} stat={stat} />
             ))}
@@ -105,7 +110,7 @@ export default function SubsidySection() {
               政府補助申請說明
             </h3>
             <p className="text-white/85 leading-relaxed mb-8">
-              我們是政府認證的合法醫療器材商，協助您申請各項政府補助。身心障礙者購買爬梯機可申請 4–8 萬元補助，長照使用者租賃爬梯機每月可申請 2,800 元補助。
+              我們是政府認證的合法醫療器材商，協助您申請各項政府補助。身心障礙者購買爬梯機可申請 4–8 萬元補助，長照使用者租賃爬梯機可申請趟次租賃及月租補助。
             </p>
             <a
               href="#contact"
