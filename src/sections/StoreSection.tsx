@@ -31,31 +31,25 @@ export default function StoreSection() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-climb-red rounded-full mt-2 shrink-0" />
                   <p className="text-white/85 text-sm">
-                    <span className="text-white font-medium">衛福部第一等級合格</span> — 五輪履帶式電動爬梯機
+                    <span className="text-white font-medium">高雄市衛生局長照 3.0</span> 爬梯機輔具租賃特約商
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-climb-red rounded-full mt-2 shrink-0" />
                   <p className="text-white/85 text-sm">
-                    <span className="text-white font-medium">高雄市輔具補助特約廠商</span> — 政府認證醫療器材商
+                    <span className="text-white font-medium">高雄市社會局</span>輔具購置代墊特約商
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-climb-red rounded-full mt-2 shrink-0" />
                   <p className="text-white/85 text-sm">
-                    <span className="text-white font-medium">長照 2.0 爬梯機特約商</span> — 長照租賃補助申請
+                    <span className="text-white font-medium">台南市社會局</span>輔具購置代墊特約商
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-climb-red rounded-full mt-2 shrink-0" />
                   <p className="text-white/85 text-sm">
-                    <span className="text-white font-medium">高雄市社會局</span> — 身障輔具購置特約商
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-climb-red rounded-full mt-2 shrink-0" />
-                  <p className="text-white/85 text-sm">
-                    <span className="text-white font-medium">爬梯機零售 · 租賃 · 保養</span> — 全方位服務
+                    <span className="text-white font-medium">屏東市社會局</span>輔具購置代墊特約商
                   </p>
                 </div>
               </div>
