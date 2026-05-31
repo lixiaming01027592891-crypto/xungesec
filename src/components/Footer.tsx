@@ -52,7 +52,7 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <Phone size={14} className="text-sky-blue mt-1 shrink-0" />
                 <div className="text-white/60 text-sm">
-                  <p>077022331</p>
+                  <p>07-7022331</p>
                   <p>0908695800</p>
                 </div>
               </div>

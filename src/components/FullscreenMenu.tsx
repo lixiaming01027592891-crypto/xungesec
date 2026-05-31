@@ -88,7 +88,7 @@ export default function FullscreenMenu() {
               <Phone size={18} className="text-sky-blue mt-0.5 shrink-0" />
               <div>
                 <p className="text-white/60 text-sm">市話</p>
-                <p className="text-white">077022331</p>
+                <p className="text-white">07-7022331</p>
               </div>
             </div>
             <div className="flex items-start gap-3">

@@ -129,7 +129,7 @@ export default function ServicesSection() {
             </div>
           </ScrollReveal>
 
-          {/* 05 Card — Photo top / Text bottom (原03照片) */}
+          {/* 05 Card — Photo top / Text bottom */}
           <ScrollReveal delay={0.4} y={30}>
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
               <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
@@ -137,7 +137,7 @@ export default function ServicesSection() {
                   05
                 </span>
                 <img
-                  src="/images/service-03.png"
+                  src="/images/service-05.jpg"
                   alt="無障礙車接駁服務"
                   className="w-full h-full object-cover"
                 />
@@ -147,10 +147,10 @@ export default function ServicesSection() {
                   無障礙車接駁服務
                 </h3>
                 <span className="text-climb-red text-sm font-medium block mb-3">
-                  洗腎 · 復健 · 外出
+                  醫院
                 </span>
                 <p className="text-steel text-sm leading-relaxed">
-                  專業無障礙車隊提供洗腎接送、復健往返、外出活動等全方位交通服務。
+                  專業無障礙車隊提供醫院接送服務。
                 </p>
               </div>
             </div>

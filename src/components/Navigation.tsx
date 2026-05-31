@@ -59,14 +59,14 @@ export default function Navigation() {
         {/* Right - Phone & Lang */}
         <div className="flex items-center gap-4">
           <a
-            href="tel:077022331"
+            href="tel:07-7022331"
             className="hidden md:flex items-center gap-2 text-white hover:text-sky-blue transition-colors text-sm"
           >
             <Phone size={16} />
-            <span>077022331</span>
+            <span>07-7022331</span>
           </a>
           <a
-            href="tel:077022331"
+            href="tel:07-7022331"
             className="md:hidden text-white hover:text-sky-blue transition-colors"
             aria-label="撥打電話"
           >
