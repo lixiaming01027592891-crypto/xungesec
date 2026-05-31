@@ -88,28 +88,28 @@ export default function FullscreenMenu() {
               <Phone size={18} className="text-sky-blue mt-0.5 shrink-0" />
               <div>
                 <p className="text-white/60 text-sm">市話</p>
-                <p className="text-white">02-2896-8918</p>
+                <p className="text-white">077022331</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Phone size={18} className="text-sky-blue mt-0.5 shrink-0" />
               <div>
                 <p className="text-white/60 text-sm">手機</p>
-                <p className="text-white">0989-064-288</p>
+                <p className="text-white">0908695800</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Mail size={18} className="text-sky-blue mt-0.5 shrink-0" />
               <div>
                 <p className="text-white/60 text-sm">Email</p>
-                <p className="text-white">andy5258@gmail.com</p>
+                <p className="text-white">Cherry320612@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <MapPin size={18} className="text-sky-blue mt-0.5 shrink-0" />
               <div>
                 <p className="text-white/60 text-sm">地址</p>
-                <p className="text-white">高雄市博愛路100號</p>
+                <p className="text-white">高雄市鳳山區博愛路100號</p>
               </div>
             </div>
             <div className="flex items-start gap-3">

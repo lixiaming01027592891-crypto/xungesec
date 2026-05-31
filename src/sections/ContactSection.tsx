@@ -3,10 +3,10 @@ import ScrollReveal from '@/components/ScrollReveal';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 
 const contactInfo = [
-  { icon: Phone, label: '市話', value: '02-2896-8918', href: 'tel:0228968918' },
-  { icon: Phone, label: '手機', value: '0989-064-288', href: 'tel:0989064288' },
-  { icon: Mail, label: 'Email', value: 'andy5258@gmail.com', href: 'mailto:andy5258@gmail.com' },
-  { icon: MapPin, label: '地址', value: '高雄市博愛路100號', href: '#' },
+  { icon: Phone, label: '市話', value: '077022331', href: 'tel:077022331' },
+  { icon: Phone, label: '手機', value: '0908695800', href: 'tel:0908695800' },
+  { icon: Mail, label: 'Email', value: 'Cherry320612@gmail.com', href: 'mailto:Cherry320612@gmail.com' },
+  { icon: MapPin, label: '地址', value: '高雄市鳳山區博愛路100號', href: '#' },
   { icon: Clock, label: '營業時間', value: '週一至五 10:00–17:00', href: '#' },
 ];
 

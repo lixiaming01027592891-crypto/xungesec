@@ -6,7 +6,7 @@ export default function SidebarContact() {
       {/* Desktop sidebar */}
       <div className="hidden md:flex fixed right-0 top-1/2 -translate-y-1/2 z-40 flex-col bg-white border border-r-0 border-gray-200 rounded-l-lg shadow-lg overflow-hidden">
         <a
-          href="tel:0989064288"
+          href="tel:0908695800"
           className="flex items-center justify-center w-12 h-12 text-navy hover:text-climb-red hover:bg-cream transition-all duration-200"
           aria-label="撥打電話"
           title="撥打電話"
@@ -24,7 +24,7 @@ export default function SidebarContact() {
           <MessageCircle size={20} />
         </a>
         <a
-          href="mailto:andy5258@gmail.com"
+          href="mailto:Cherry320612@gmail.com"
           className="flex items-center justify-center w-12 h-12 text-navy hover:text-climb-red hover:bg-cream transition-all duration-200 border-t border-gray-100"
           aria-label="發送 Email"
           title="發送 Email"
@@ -36,7 +36,7 @@ export default function SidebarContact() {
       {/* Mobile bottom bar */}
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-[0_-2px_10px_rgba(0,0,0,0.1)] flex">
         <a
-          href="tel:0989064288"
+          href="tel:0908695800"
           className="flex-1 flex items-center justify-center gap-2 py-3.5 text-navy hover:bg-cream transition-colors"
         >
           <Phone size={18} />

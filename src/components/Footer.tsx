@@ -52,17 +52,17 @@ export default function Footer() {
               <div className="flex items-start gap-2.5">
                 <Phone size={14} className="text-sky-blue mt-1 shrink-0" />
                 <div className="text-white/60 text-sm">
-                  <p>02-2896-8918</p>
-                  <p>0989-064-288</p>
+                  <p>077022331</p>
+                  <p>0908695800</p>
                 </div>
               </div>
               <div className="flex items-start gap-2.5">
                 <Mail size={14} className="text-sky-blue mt-1 shrink-0" />
-                <p className="text-white/60 text-sm">andy5258@gmail.com</p>
+                <p className="text-white/60 text-sm">Cherry320612@gmail.com</p>
               </div>
               <div className="flex items-start gap-2.5">
                 <MapPin size={14} className="text-sky-blue mt-1 shrink-0" />
-                <p className="text-white/60 text-sm">高雄市博愛路100號</p>
+                <p className="text-white/60 text-sm">高雄市鳳山區博愛路100號</p>
               </div>
               <div className="flex items-start gap-2.5">
                 <Clock size={14} className="text-sky-blue mt-1 shrink-0" />
