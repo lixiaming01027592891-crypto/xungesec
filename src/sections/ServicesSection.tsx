@@ -110,7 +110,7 @@ export default function ServicesSection() {
                   04
                 </span>
                 <img
-                  src="/images/service-04.png"
+                  src="/images/service-04-new.jpg"
                   alt="貨用爬梯機租賃 / 販售"
                   className="w-full h-full object-cover"
                 />
