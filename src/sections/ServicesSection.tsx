@@ -1,8 +1,72 @@
+import { useState, useEffect } from 'react';
 import ScrollReveal from '@/components/ScrollReveal';
 import {
-  CalendarDays,
   HelpCircle,
 } from 'lucide-react';
+
+const carousel03Images = [
+  { src: '/images/service-03a.jpg', alt: '爬梯機服務實景 1' },
+  { src: '/images/service-03b.jpg', alt: '爬梯機服務實景 2' },
+];
+
+function Carousel03Card({ delay = 0.2 }: { delay?: number }) {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % carousel03Images.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <ScrollReveal delay={delay} y={30}>
+      <div className="bg-white border border-gray-200 rounded-lg overflow-hidden h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
+        {/* Photo carousel */}
+        <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+          <span className="absolute top-3 left-4 text-5xl md:text-6xl font-extrabold text-white/30 z-10 drop-shadow-md font-mono">
+            03
+          </span>
+          {carousel03Images.map((img, i) => (
+            <img
+              key={i}
+              src={img.src}
+              alt={img.alt}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+                i === current ? 'opacity-100' : 'opacity-0'
+              }`}
+            />
+          ))}
+          {/* Dots indicator */}
+          <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            {carousel03Images.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  i === current ? 'bg-white w-4' : 'bg-white/50'
+                }`}
+                aria-label={`顯示第 ${i + 1} 張照片`}
+              />
+            ))}
+          </div>
+        </div>
+        {/* Text */}
+        <div className="p-5 md:p-6">
+          <h3 className="text-xl font-bold text-navy mb-1">
+            履帶爬梯機租賃
+          </h3>
+          <span className="text-climb-red text-sm font-medium block mb-3">
+            可申請長照補助
+          </span>
+          <p className="text-steel text-sm leading-relaxed">
+            靈活租賃方案，短期長期皆可，讓您以最經濟的方式獲得專業設備。
+          </p>
+        </div>
+      </div>
+    </ScrollReveal>
+  );
+}
 
 export default function ServicesSection() {
   return (
@@ -79,28 +143,8 @@ export default function ServicesSection() {
             </div>
           </ScrollReveal>
 
-          {/* 03 Card — Original layout */}
-          <ScrollReveal delay={0.2} y={30}>
-            <div className="bg-white border border-gray-200 rounded-lg p-6 md:p-8 h-full group hover:border-navy hover:shadow-card hover:-translate-y-1 transition-all duration-300">
-              <span className="text-5xl md:text-6xl font-bold text-gray-200 font-mono block mb-4">
-                03
-              </span>
-              <CalendarDays
-                size={32}
-                className="text-navy mb-4"
-                strokeWidth={1.5}
-              />
-              <h3 className="text-xl font-bold text-navy mb-1">
-                履帶爬梯機租賃
-              </h3>
-              <span className="text-climb-red text-sm font-medium block mb-3">
-                可申請長照月租補助 2800
-              </span>
-              <p className="text-steel text-sm leading-relaxed">
-                靈活租賃方案，短期長期皆可，讓您以最經濟的方式獲得專業設備。
-              </p>
-            </div>
-          </ScrollReveal>
+          {/* 03 Card — Photo top with carousel / Text bottom */}
+          <Carousel03Card delay={0.2} />
 
           {/* 04 Card — Photo top / Text bottom (yellow cargo) */}
           <ScrollReveal delay={0.3} y={30}>
