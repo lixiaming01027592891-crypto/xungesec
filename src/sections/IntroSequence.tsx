@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useApp } from '@/context/AppContext';
 
-const lines = ['天暢行國際', '暢行科技', '勛哥無障礙車隊'];
+const lines = ['天暢行國際', '暢行科技', '勳哥無障礙車隊'];
 
 export default function IntroSequence() {
   const { setIsLoading } = useApp();

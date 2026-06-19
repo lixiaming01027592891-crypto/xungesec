@@ -19,7 +19,7 @@ export default function HeroSection() {
       {/* Content - direct render, no animation */}
       <div className="relative z-10 text-center px-5 max-w-4xl mx-auto pt-20">
         <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white/90 mb-3 tracking-widest">
-          勛哥無障礙車隊
+          勳哥無障礙車隊
         </p>
 
         <h1
