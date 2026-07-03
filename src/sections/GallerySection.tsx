@@ -4,7 +4,7 @@ import { X, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const galleryImages = [
   { src: '/images/case-1.jpg', alt: '操作員協助長者下樓梯', span: 'col-span-1' },
-  { src: '/images/case-2.jpg', alt: '貨車裝卸折疊爬梯椅', span: 'col-span-1' },
+  { src: '/images/case-2.jpg', alt: '福祉車升降平台服務', span: 'col-span-1' },
   { src: '/images/case-3.jpg', alt: '室內窄樓梯服務實景', span: 'col-span-2 sm:col-span-2' },
   { src: '/images/case-4.jpg', alt: '住宅樓梯環境評估', span: 'col-span-1' },
   { src: '/images/case-5.jpg', alt: '室內大理石樓梯服務', span: 'col-span-1' },

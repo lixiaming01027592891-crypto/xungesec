@@ -10,7 +10,7 @@ export default function StoreSection() {
             <div className="relative">
               <img
                 src="/images/storefront.png"
-                alt="暢行科技國際有限公司門市"
+                alt="暢行科技門市外觀｜多台爬梯機展示｜高雄鳳山區博愛路100號"
                 className="rounded-lg shadow-image w-full object-cover"
               />
             </div>

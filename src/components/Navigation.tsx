@@ -48,7 +48,7 @@ export default function Navigation() {
         <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center">
           <img
             src="/images/logo.png"
-            alt="暢行科技 Logo"
+            alt="暢行科技｜勳哥無障礙車隊 Logo"
             className="h-8 md:h-12 w-auto object-contain"
           />
           <span className="md:hidden text-white text-[11px] font-bold tracking-wider mt-0.5 whitespace-nowrap">

@@ -5,8 +5,8 @@ import {
 } from 'lucide-react';
 
 const carousel03Images = [
-  { src: '/images/service-03a.jpg', alt: '爬梯機服務實景 1' },
-  { src: '/images/service-03b.jpg', alt: '爬梯機服務實景 2' },
+  { src: '/images/service-03a.jpg', alt: '操作員俯拍協助行動不便者上樓梯' },
+  { src: '/images/service-03b.jpg', alt: '工作人員推爬梯機協助下樓梯' },
 ];
 
 function Carousel03Card({ delay = 0.2 }: { delay?: number }) {
@@ -97,7 +97,7 @@ export default function ServicesSection() {
                 </span>
                 <img
                   src="/images/service-01.jpg"
-                  alt="爬梯機上下樓服務"
+                  alt="專業操作員使用爬梯機協助長者上下樓梯服務"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -125,7 +125,7 @@ export default function ServicesSection() {
                 </span>
                 <img
                   src="/images/service-02a.jpg"
-                  alt="履帶爬梯機販售"
+                  alt="履帶式電動爬梯機販售展示"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -155,7 +155,7 @@ export default function ServicesSection() {
                 </span>
                 <img
                   src="/images/service-04-new.jpg"
-                  alt="貨用爬梯機租賃 / 販售"
+                  alt="黃色貨用爬梯機室內產品展示"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -182,7 +182,7 @@ export default function ServicesSection() {
                 </span>
                 <img
                   src="/images/service-05.jpg"
-                  alt="無障礙車接駁服務"
+                  alt="三位工作人員與福祉車及爬梯機團隊照"
                   className="w-full h-full object-cover"
                 />
               </div>

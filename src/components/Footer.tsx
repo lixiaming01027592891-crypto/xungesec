@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <img
               src="/images/logo.png"
-              alt="暢行科技"
+              alt="暢行科技｜勳哥無障礙車隊 Logo"
               className="h-10 w-auto object-contain mb-4 brightness-0 invert"
             />
             <h4 className="text-white font-bold text-lg mb-1">暢行科技國際有限公司</h4>
