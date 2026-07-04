@@ -4,7 +4,6 @@ import Navigation from '@/components/Navigation';
 import FullscreenMenu from '@/components/FullscreenMenu';
 import SidebarContact from '@/components/SidebarContact';
 import Footer from '@/components/Footer';
-import HeroSection from '@/sections/HeroSection';
 import StoreSection from '@/sections/StoreSection';
 import ServicesSection from '@/sections/ServicesSection';
 import GallerySection from '@/sections/GallerySection';
@@ -49,7 +48,10 @@ function AppContent() {
       <SidebarContact />
 
       <main>
-        <HeroSection />
+        {/* SEO-only H1 — 視覺隱藏 (sr-only)，不影響版面，僅供搜尋引擎與螢幕閱讀器 */}
+        <h1 className="sr-only">
+          暢行科技｜勳哥無障礙車隊 — 高雄爬梯機銷售、租賃、無障礙車接送與政府補助申請
+        </h1>
         <StoreSection />
         <ServicesSection />
         <GallerySection />
