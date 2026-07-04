@@ -6,6 +6,7 @@ const quickLinks = [
   { label: '使用案例', href: '#gallery' },
   { label: '補助資訊', href: '#subsidy' },
   { label: '聯絡我們', href: '#contact' },
+  { label: '輔具知識', href: '/blog/' },
 ];
 
 export default function Footer() {
