@@ -2,7 +2,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 
 export default function StoreSection() {
   return (
-    <section className="bg-navy section-padding pt-20 md:pt-24">
+    <section className="bg-navy section-padding">
       <div className="content-max-width">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left - Store Photo */}
@@ -12,6 +12,7 @@ export default function StoreSection() {
                 src="/images/storefront.png"
                 alt="暢行科技門市外觀｜多台爬梯機展示｜高雄鳳山區博愛路100號"
                 className="rounded-lg shadow-image w-full object-cover"
+                loading="lazy"
               />
             </div>
           </ScrollReveal>
@@ -55,7 +56,7 @@ export default function StoreSection() {
               </div>
 
               <p className="text-white/60 text-sm leading-relaxed">
-                暢行科技國際有限公司 — 動哥爬梯機照顧團隊。我們秉持「專業 · 用心 · 安心」的理念，為每一位需要幫助的客戶提供最優質的爬梯機服務。
+                暢行科技國際有限公司 — 勳哥爬梯機照顧團隊。我們秉持「專業 · 用心 · 安心」的理念，為每一位需要幫助的客戶提供最優質的爬梯機服務。
               </p>
             </div>
           </ScrollReveal>

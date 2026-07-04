@@ -21,7 +21,7 @@ export default function Footer() {
               className="h-10 w-auto object-contain mb-4 brightness-0 invert"
             />
             <h4 className="text-white font-bold text-lg mb-1">暢行科技國際有限公司</h4>
-            <p className="text-sky-blue text-sm mb-2">動哥爬梯機照顧團隊</p>
+            <p className="text-sky-blue text-sm mb-2">勳哥爬梯機照顧團隊</p>
             <p className="text-white/60 text-sm leading-relaxed">
               政府認證合法醫療器材商，專營爬梯機零售、租賃、保養及上下樓服務。
             </p>

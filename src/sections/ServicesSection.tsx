@@ -35,6 +35,7 @@ function Carousel03Card({ delay = 0.2 }: { delay?: number }) {
               className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
                 i === current ? 'opacity-100' : 'opacity-0'
               }`}
+              loading="lazy"
             />
           ))}
           {/* Dots indicator */}
@@ -99,6 +100,7 @@ export default function ServicesSection() {
                   src="/images/service-01.jpg"
                   alt="專業操作員使用爬梯機協助長者上下樓梯服務"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               {/* Text area */}
@@ -127,6 +129,7 @@ export default function ServicesSection() {
                   src="/images/service-02a.jpg"
                   alt="履帶式電動爬梯機販售展示"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-5 md:p-6">
@@ -157,6 +160,7 @@ export default function ServicesSection() {
                   src="/images/service-04-new.jpg"
                   alt="黃色貨用爬梯機室內產品展示"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-5 md:p-6">
@@ -184,6 +188,7 @@ export default function ServicesSection() {
                   src="/images/service-05.jpg"
                   alt="三位工作人員與福祉車及爬梯機團隊照"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="p-5 md:p-6">

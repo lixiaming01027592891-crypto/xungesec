@@ -8,8 +8,9 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <img
           src="/images/hero-real.jpg"
-          alt="天創行電動爬梯椅產品展示｜暢行科技"
+          alt="暢行科技電動爬梯機產品展示｜勳哥無障礙車隊高雄爬梯機"
           className="w-full h-full object-cover"
+          fetchPriority="high"
         />
       </div>
 
