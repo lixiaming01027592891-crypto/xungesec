@@ -55,7 +55,7 @@ export default function StoreSection() {
               </div>
 
               <p className="text-white/60 text-sm leading-relaxed">
-                暢行科技國際有限公司 — 動哥爬梯機照顧團隊。我們秉持「專業 · 用心 · 安心」的理念，為每一位需要幫助的客戶提供最優質的爬梯機服務。
+                暢行科技國際有限公司 — 勳哥爬梯機照顧團隊。我們秉持「專業 · 用心 · 安心」的理念，為每一位需要幫助的客戶提供最優質的爬梯機服務。
               </p>
             </div>
           </ScrollReveal>
