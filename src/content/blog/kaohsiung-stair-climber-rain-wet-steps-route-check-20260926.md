@@ -3,7 +3,7 @@ title: "高雄爬梯機遇到雨天濕樓梯：踏面、入口與改期條件"
 slug: "kaohsiung-stair-climber-rain-wet-steps-route-check-20260926"
 description: "雨天安排爬梯服務前，需重新檢查樓梯踏面、出入口積水、輪椅路線與改期備案，不能只沿用晴天照片。"
 date: "2026-09-26"
-cover: "/images/articles/20260926/xungesec.png"
+cover: "/images/articles/20260926/xungesec.webp"
 category: "樓梯評估"
 keywords: ["高雄爬梯機","樓梯評估"]
 ---
